@@ -15,7 +15,9 @@ export function Footer() {
             <a href="">Appointments</a>
           </div>
           <div className="flex flex-col gap-y-2 text-gray-500">
-            <h1 className="text-xl font-bold text-amber-300">Positivity</h1>
+            <h1 className="text-xl font-bold text-amber-300">
+              Blog, News & Apps
+            </h1>
             <a href="">Resources for Medical Professionals</a>
             <a href="">Patient Experiece</a>
             <a href="">Research & Innovations</a>
