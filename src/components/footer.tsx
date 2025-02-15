@@ -6,7 +6,7 @@ export function Footer() {
       <div className="bg-gray-50">
         <div className="flex justify-between px-6 py-12">
           <div className="flex flex-col gap-y-2 text-gray-500">
-            <h1 className="text-xl font-bold text-amber-300">Operations</h1>
+            <h1 className="text-xl font-bold text-amber-600">Operations</h1>
             <a href="">Find A Doctor</a>
             <a href="">Location & Directions</a>
             <a href="">Patients & Visitors</a>
@@ -15,7 +15,7 @@ export function Footer() {
             <a href="">Appointments</a>
           </div>
           <div className="flex flex-col gap-y-2 text-gray-500">
-            <h1 className="text-xl font-bold text-amber-300">
+            <h1 className="text-xl font-bold text-amber-600">
               Blog, News & Apps
             </h1>
             <a href="">Resources for Medical Professionals</a>

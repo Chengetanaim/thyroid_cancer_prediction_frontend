@@ -4,7 +4,9 @@ export function NavBar() {
       <div className="bg-gray-50">
         <div className="flex justify-between px-6 py-4 ">
           <div className="flex gap-x-10">
-            <a className="font-bold">Thyroid Cancer Prediction</a>
+            <a className="font-bold text-amber-600">
+              Thyroid Cancer Prediction
+            </a>
             <a href="" className="font-thin">
               Machine Learning in Health
             </a>

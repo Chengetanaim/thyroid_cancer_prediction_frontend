@@ -1,5 +1,6 @@
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -10,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "./ui/button";
-import { ChartLine } from "lucide-react";
+import { ChartLine, Activity } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -20,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { toast } from "sonner";
 
 export function PredictForm() {
   return (
@@ -32,12 +34,53 @@ export function PredictForm() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] bg-gray-200">
         <DialogHeader>
-          <DialogTitle>Thyroid Cancer Prediction</DialogTitle>
+          <DialogTitle>
+            <div className="flex gap-x-2 items-center">
+              Thyroid Cancer Prediction <Activity className="text-amber-600" />
+            </div>
+          </DialogTitle>
           <DialogDescription>
             Predict Risk of Malignant Thyroid Nodules
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Gender
+            </Label>
+            <Select>
+              <SelectTrigger className="w-[400px]">
+                <SelectValue placeholder="" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Select Gender</SelectLabel>
+                  <SelectItem value="apple">Male</SelectItem>
+                  <SelectItem value="banana">Female</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="name" className="text-right">
+              Ethnicity
+            </Label>
+            <Select>
+              <SelectTrigger className="w-[400px]">
+                <SelectValue placeholder="" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  <SelectLabel>Which ethnicity are you?</SelectLabel>
+                  <SelectItem value="apple">Caucasian</SelectItem>
+                  <SelectItem value="banana">Hispanic</SelectItem>
+                  <SelectItem value="banafna">Asian</SelectItem>
+                  <SelectItem value="banafffna">African</SelectItem>
+                  <SelectItem value="banaffna">Middle Eastern</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
               Family History
@@ -116,18 +159,21 @@ export function PredictForm() {
             </Label>
             <Input
               id="username"
-              value="@peduarte"
+              value="1.24"
               className="col-span-3 w-[400px]"
             />
           </div>
         </div>
         <DialogFooter>
-          <Button
-            type="submit"
-            className="bg-amber-300 text-black rounded-xl hover:bg-black hover:text-white"
-          >
-            Predict
-          </Button>
+          <DialogClose asChild>
+            <Button
+              type="submit"
+              className="bg-amber-300 text-black rounded-xl hover:bg-black hover:text-white"
+              onClick={() => toast.success("Prediction added!")}
+            >
+              Predict
+            </Button>
+          </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>
