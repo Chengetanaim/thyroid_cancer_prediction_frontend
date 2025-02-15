@@ -4,8 +4,10 @@ import { Hero } from "./components/Hero";
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      <Hero></Hero>
+      <div className="bg-orange-50 h-screen">
+        <NavBar></NavBar>
+        <Hero></Hero>
+      </div>
     </>
   );
 }

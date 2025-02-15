@@ -4,7 +4,7 @@ import { ChartLine } from "lucide-react";
 export function Hero() {
   return (
     <>
-      <div className="flex justify-between px-48 py-20">
+      <div className="flex justify-between px-48 py-20 ">
         <div className="w-1/2">
           <h1 className="text-5xl tracking-wide font-mono">
             Early detection means early fixing.
