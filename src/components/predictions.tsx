@@ -10,43 +10,43 @@ import {
 
 const predictions = [
   {
-    predictionId: "INV001",
+    predictionId: "PR001",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Jan 12, 2023 08:32:12 AM",
   },
   {
-    predictionId: "INV002",
+    predictionId: "PR002",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Jan 14, 2023 08:32:12 AM",
   },
   {
-    predictionId: "INV003",
+    predictionId: "PR003",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Jan 17, 2023 08:32:12 AM",
   },
   {
-    predictionId: "INV004",
+    predictionId: "PR004",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Jan 19, 2023 08:32:12 AM",
   },
   {
-    predictionId: "INV005",
+    predictionId: "PR005",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Jan 23, 2023 08:32:12 AM",
   },
   {
-    predictionId: "INV006",
+    predictionId: "PR006",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Feb 08, 2023 08:32:12 AM",
   },
   {
-    predictionId: "INV007",
+    predictionId: "PR007",
     predictionStatus: "Positive",
     predictionProbability: "87.4%",
     createdAt: "Mar 15, 2023 08:32:12 AM",
