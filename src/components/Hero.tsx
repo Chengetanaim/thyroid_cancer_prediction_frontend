@@ -1,3 +1,6 @@
+import { Button } from "./ui/button";
+import { ChartLine } from "lucide-react";
+
 export function Hero() {
   return (
     <>
@@ -14,6 +17,12 @@ export function Hero() {
             alt=""
           />
         </div>
+      </div>
+      <div className="w-64 mx-auto ">
+        <Button className="p-8 rounded-xl bg-amber-300 text-black hover:bg-opacity-35">
+          <ChartLine />
+          PREDICT NOW
+        </Button>
       </div>
     </>
   );
