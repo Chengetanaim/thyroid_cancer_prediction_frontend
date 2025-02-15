@@ -1,6 +1,5 @@
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -22,8 +21,22 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
+import { useState } from "react";
+import { Loader } from "lucide-react";
 
 export function PredictForm() {
+  const [submitting, setIsSubmitting] = useState(false);
+  const handleSubmit = () => {
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      toast("Prediction PR2333 - Postive", {
+        description: "Prediction is positive with 99% probability.",
+      });
+    }, 1000);
+
+    return;
+  };
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -165,15 +178,15 @@ export function PredictForm() {
           </div>
         </div>
         <DialogFooter>
-          <DialogClose asChild>
-            <Button
-              type="submit"
-              className="bg-amber-300 text-black rounded-xl hover:bg-black hover:text-white"
-              onClick={() => toast.success("Prediction added!")}
-            >
-              Predict
-            </Button>
-          </DialogClose>
+          <Button
+            type="submit"
+            className="bg-amber-300 text-black rounded-xl hover:bg-black hover:text-white"
+            onClick={handleSubmit}
+            disabled={submitting}
+          >
+            {submitting && <Loader className="animate-spin" />}
+            {submitting ? "Predicting..." : "Predict"}
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
