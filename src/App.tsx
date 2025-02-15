@@ -1,6 +1,7 @@
 import { NavBar } from "./components/NavBar";
 import { Hero } from "./components/Hero";
 import { Predictions } from "./components/predictions";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <NavBar></NavBar>
         <Hero></Hero>
         <Predictions></Predictions>
+        <Footer></Footer>
       </div>
     </>
   );
