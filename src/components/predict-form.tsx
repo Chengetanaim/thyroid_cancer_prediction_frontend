@@ -68,8 +68,8 @@ export function PredictForm() {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Select Gender</SelectLabel>
-                  <SelectItem value="apple">Male</SelectItem>
-                  <SelectItem value="banana">Female</SelectItem>
+                  <SelectItem value="Male">Male</SelectItem>
+                  <SelectItem value="Female">Female</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -85,11 +85,11 @@ export function PredictForm() {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Which ethnicity are you?</SelectLabel>
-                  <SelectItem value="apple">Caucasian</SelectItem>
-                  <SelectItem value="banana">Hispanic</SelectItem>
-                  <SelectItem value="banafna">Asian</SelectItem>
-                  <SelectItem value="banafffna">African</SelectItem>
-                  <SelectItem value="banaffna">Middle Eastern</SelectItem>
+                  <SelectItem value="Caucasian">Caucasian</SelectItem>
+                  <SelectItem value="Hispanic">Hispanic</SelectItem>
+                  <SelectItem value="Asian">Asian</SelectItem>
+                  <SelectItem value="African">African</SelectItem>
+                  <SelectItem value="Middle Eastern">Middle Eastern</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -105,10 +105,10 @@ export function PredictForm() {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Family History</SelectLabel>
-                  <SelectItem value="apple">
+                  <SelectItem value="Yes">
                     Yes, I have relatives who previously had it
                   </SelectItem>
-                  <SelectItem value="banana">
+                  <SelectItem value="No">
                     No, I do not know any relatives who've had it
                   </SelectItem>
                 </SelectGroup>
@@ -126,8 +126,8 @@ export function PredictForm() {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Radiation Exposure</SelectLabel>
-                  <SelectItem value="apple">Yes</SelectItem>
-                  <SelectItem value="banana">No</SelectItem>
+                  <SelectItem value="Yes">Yes</SelectItem>
+                  <SelectItem value="No">No</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -143,8 +143,8 @@ export function PredictForm() {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Iodine Deficiency</SelectLabel>
-                  <SelectItem value="apple">Yes</SelectItem>
-                  <SelectItem value="banana">No</SelectItem>
+                  <SelectItem value="Yes">Yes</SelectItem>
+                  <SelectItem value="No">No</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -160,8 +160,8 @@ export function PredictForm() {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Are you a smoker?</SelectLabel>
-                  <SelectItem value="apple">Yes</SelectItem>
-                  <SelectItem value="banana">No</SelectItem>
+                  <SelectItem value="Yes">Yes</SelectItem>
+                  <SelectItem value="No">No</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -172,7 +172,7 @@ export function PredictForm() {
             </Label>
             <Input
               id="username"
-              value="1.24"
+              value={1.24}
               className="col-span-3 w-[400px]"
             />
           </div>
